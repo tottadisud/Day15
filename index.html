@@ -1,0 +1,76 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+</body>
+<script>
+    var str="sudheer kumar";
+    console.log(str.search("kumar"));
+
+    console.log(str.substr(2,4));
+    console.log(str.substring(1,5));
+
+    console.log(str.split(" "));
+
+    var userInput=prompt("Enter the numbers")
+    console.log(typeof(userInput));
+
+   /* console.log(userInput.split(" "));
+    console.log(userInput.split(" ").filter((n)=>{
+        return Number(n)%2==0
+    }))*/
+
+    console.log(str.includes("KUMAR"));
+    console.log(str.startsWith("za"));
+    console.log(str.endsWith("ar"));
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    function reverse(str){
+        var reversedString="";
+        for(var char of str){
+            reversedString=char+reversedString
+        }
+        return reversedString;
+    }
+    console.log(reverse(str));
+
+
+    function reverseString(s){
+        return s.split("").reverse().join("");
+    }
+    console.log(reverseString(str));
+    console.log(str.split("").reverse().join(""));
+
+
+     var [a,b,c]=[21,22,23]
+     console.log(a);
+      
+
+    var obj={
+        name:"sudheer",
+        role:"web developer"
+    }
+     var {name,role}=obj;
+     console.log(obj.name,obj.role);
+
+
+     var person={
+         firstName:"sudheer",
+         lastName:"kumar",
+         org:"FRESHER",
+         fullDetails:function(){
+             return this.firstName+" "+this.lastName+" working in "+this.org;
+         }
+
+     }
+    
+     console.log(person.fullDetails());
+
+</script>
+</html>
